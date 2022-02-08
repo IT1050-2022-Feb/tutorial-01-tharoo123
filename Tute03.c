@@ -17,10 +17,15 @@ int main() {
   float sum;
   printf("Enter a number:");
   scanf("%d",&num);
-  // calculation
-  sum=(num *(num+1)/2.00);
-  // printing the sum
-  printf("The sum is %.2f",sum);
+  while(num>=1)
+    {
+        // calculation
+      sum=(num *(num+1)/2.00);
+     // printing the sum
+      printf("The sum is %.2f\n",sum);
+      printf("Enter a number:");
+      scanf("%d",&num);
+     }
   return 0;
 }
 
