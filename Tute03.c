@@ -13,7 +13,14 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
-  
+  int num;
+  float sum;
+  printf("Enter a number:");
+  scanf("%d",&num);
+  // calculation
+  sum=(num *(num+1)/2.00);
+  // printing the sum
+  printf("The sum is %.2f",sum);
   return 0;
 }
 
